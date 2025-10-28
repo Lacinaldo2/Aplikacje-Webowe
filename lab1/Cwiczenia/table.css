@@ -7,3 +7,11 @@ th,
 td {
   border: 2px inset black;
 }
+
+
+div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
