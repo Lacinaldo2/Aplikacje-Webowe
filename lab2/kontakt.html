@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Hollow Knight any% speedrun</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tutoriale.html">Tutoriale</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a class="active" href="kontakt.html">Kontakt</a></li>
+        </ul> 
+    </nav>   
+        <form id="formularz" class="container">
+            <label for="nick">Nickname:</label>
+            <input type="text" id="nick" name="nick">
+            <label for="email">Email:</label>
+            <input id="email" name="email" placeholder="" required type="email">
+            <p>Wybierz temat wiadomości: </p>
+            <div class="choice">
+                <div>
+                <input type="radio" id="1" name="temat" value="Propozycja">
+                <label for="1">Propozycja</label>
+                </div>
+                <div>
+                <input type="radio" id="2" name="temat" value="Opinia">
+                <label for="2">Opinia</label>
+                </div>
+                <div>
+                <input type="radio" id="3" name="temat" value="Bug">
+                <label for="3">Błąd</label>
+                </div>
+            </div>
+            <br>
+            <label for="wiadomosc">Wiadomość:</label>
+            <textarea id="wiadomosc" name="wiadomosc" placeholder="Tutaj wpisz swoją wiadomość" rows="3" cols="40" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form> 
+        <script src="formularz.js"></script>
+
+    <footer>
+        <p>Autor: Szymon Łacina</p>
+        <div class="zegarek" id="zegarek"></div>
+        <script src="zegar.js"></script>
+    </footer>
+
+</body>
+</html>
